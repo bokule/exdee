@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+	  <title>Filmovi</title>
+	  <link>https://bokule.github.io/exdee/filmovi.html</link>
+	  <description>Opisi popularnih modernih filmova.</description>
+	  <item>
+		<title>Joker</title>
+		<link>https://bokule.github.io/exdee/joker.html</link>
+		<description>Izašao je opis filma "Joker"!</description>
+	  </item>
+	  <item>
+		<title>Shazam!</title>
+		<link>https://bokule.github.io/exdee/shazam.html</link>
+		<description>Izašao je opis filma "Shazam!"!</description>
+	  </item>
+	  <item>
+		<title>Spider-Man: Far From Home</title>
+		<link>https://bokule.github.io/exdee/spiderman.html</link>
+		<description>Izašao je opis filma "Spider-Man: Far From Home"!</description>
+	  </item>
+	  <item>
+		<title>Avengers: Endgame</title>
+		<link>https://bokule.github.io/exdee/avengers.html</link>
+		<description>Izašao je opis filma "Avengers: Endgame"!</description>
+	  </item>
+	  <item>
+		<title>IT Chapter Two</title>
+		<link>https://bokule.github.io/exdee/it.html</link>
+		<description>Izašao je opis filma "IT Chapter Two"!</description>
+	  </item>
+	  <item>
+		<title>Fast &amp; Furious: Hobbs &amp; Shaw</title>
+		<link>https://bokule.github.io/exdee/fastAndFurious.html</link>
+		<description>Izašao je opis filma "Fast &amp; Furious: Hobbs &amp; Shaw"!</description>
+	  </item>
+	</channel>
+</rss>

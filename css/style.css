@@ -1,0 +1,391 @@
+@font-face {
+	src: url("../fonts/Roboto-Regular.ttf");
+	font-family: "Roboto";
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    color: #1f1f1f;
+	font-family: "Roboto";
+}
+
+body {
+	background-color: #ededed;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+/* ======================================================== CLASSES ======================================================== */
+
+.background {
+	background-image: url("../img/womanEatingPopcorn.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.okvir {
+	width: 60%;
+	margin: 0px auto;
+}
+
+.cover {
+	height: 100%;
+	background-color: rgba(31,31,31,0.7);
+}
+
+/* ======================================================== CONTACT BAR ======================================================== */
+
+#contactBar {
+	padding: 8px 0px;
+	background-color: #1f1f1f;
+	font-size: 13px;
+}
+
+#contactBar .okvir {
+	display: flex;
+	justify-content: space-between;
+}
+
+#contactBar i, #contactBar p {
+	color: #ededed;
+}
+
+#phoneEmail ul li {
+	margin-right: 10px;
+}
+
+#phoneEmail ul li i, #phoneEmail ul li p {
+	display: inline-block;
+}
+
+#rssSitemap ul li {
+	margin-left: 10px;
+}
+
+/* ======================================================== HEADER ======================================================== */
+
+#header {
+	background-color: #fff;
+	padding: 10px 0px;
+	position: sticky;
+	top: 0px;
+	border-bottom: 2px solid black;
+}
+
+#header .okvir {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#logo {
+	font-size: 22px;
+}
+
+#xd {
+	color: #90b7f5;
+}
+
+.active {
+	color: #90b7f5;
+}
+
+#menu {
+	font-size: 19px;
+}
+
+#menu ul li a {
+    padding: 15px 20px;
+}
+
+#menu ul li a:hover {
+	color: #90b7f5;
+}
+
+/* ======================================================== MAIN POCETNA ======================================================== */
+
+#mainPocetna .cover {
+    padding: 150px 0px;
+}
+
+#mainPocetna .cover .okvir h2, #mainPocetna .cover .okvir p, #mainPocetna .cover .okvir a {
+	display: block;
+	text-align: center;
+}
+
+#mainPocetna .cover .okvir h2, #mainPocetna .cover .okvir p {
+	color: #ededed;
+	animation-name: textAppear;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+}
+
+#mainPocetna .cover .okvir h2 {
+	width: 70%;
+	margin: 0px auto;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+#mainPocetna .cover .okvir p {
+	margin: 25px auto;
+	font-size: 19px;
+}
+
+#mainPocetna .cover .okvir a {
+	width: 110px;
+	margin: 70px auto 0px auto;
+	padding: 10px 0px;
+	color: #90b7f5;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 2px solid #90b7f5;
+	border-radius: 5px;
+}
+
+#mainPocetna .cover .okvir a:hover {
+	color: #1f1f1f;
+	background-color: #ededed;
+	border: 2px solid #1f1f1f;
+}
+
+/* ANIMACIJE */
+
+@keyframes textAppear {
+	from {color: rgba(0,0,0,0);}
+	to {color: #ededed;}
+}
+
+/* ======================================================== MAIN FILMOVI ======================================================== */
+
+#mainFilmovi {
+	padding: 40px 0px;
+}
+
+#movies {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.movieItem {
+	width: 300px;
+	margin: 10px;
+}
+
+.movieItem a img {
+	width: 100%;
+	border: 2px solid #1f1f1f;
+}
+
+.movieItem a h2 {
+	color: #1f1f1f;
+	padding: 7px;
+}
+
+.movieItem a:hover h2 {
+	color: #90b7f5;
+}
+
+/* ======================================================== MAIN KONTAKT ======================================================== */
+
+#mainKontakt .okvir {
+	padding: 40px 0px;
+}
+
+#contactForm {
+	width: 380px;
+	background-color: #ededed;
+	margin: 0px auto;
+	padding: 20px 20px;
+	border: 2px solid #1f1f1f;
+}
+
+#contactForm header h2, #tbIme, #tbEmail, #tbPoruka {
+	margin-bottom: 20px;
+}
+
+#contactForm header h2, #contactForm form table td, #btnFile {
+	color: #1f1f1f;
+}
+
+#contactForm form, #contactForm table, #tbIme, #tbEmail, #tbPoruka {
+	width: 100%;
+}
+
+#tbIme, #tbEmail, #tbPoruka {
+	background-color: #ededed;
+	color: #1f1f1f;
+	font-size: 15px;
+	border: none;
+	border-bottom: 2px solid #1f1f1f;
+}
+
+#tbIme:focus, #tbEmail:focus, #tbPoruka:focus {
+	border-bottom: 2px solid #90b7f5;
+	outline: none;
+}
+
+#tbPoruka {
+	height: 150px;
+	resize: none;
+}
+
+.tdCenter {
+	text-align: center;
+}
+
+#btnPosalji {
+	margin-top: 15px;
+	padding: 8px 20px;
+	color: #ededed;
+	font-weight: bold;
+	background-color: #1f1f1f;
+	border: 2px solid #1f1f1f;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#btnPosalji:hover {
+	background-color: #ededed;
+	border: 2px solid #90b7f5;
+	color: #90b7f5;
+}
+
+/* ======================================================== MAIN O AUTORU ======================================================== */
+
+#oAutoru {
+	padding: 40px 0px;
+}
+
+#autorInfo {
+	display: flex;
+}
+
+#autorInfo img {
+	height: 300px;
+	margin-right: 50px;
+	border: 2px solid #1f1f1f;
+}
+
+#infoTable h2 {
+	margin-bottom: 5px; /* Koristi se i u MAIN FILM */
+}
+
+#infoTable table {
+	margin-bottom: 15px; /* Koristi se i u MAIN FILM */
+}
+
+#infoTable th, #infoTable td {
+	text-align: left; /* Koristi se i u MAIN FILM */
+	padding: 5px 10px 5px 0px; /* Koristi se i u MAIN FILM */
+}
+
+#infoTable td {
+	word-wrap: normal; /* Koristi se i u MAIN FILM */
+	max-width: 350px; /* Koristi se i u MAIN FILM */
+}
+
+#oAutoru hr {
+	margin: 20px 0px;
+}
+
+#biografija h2, #biografija p {
+	margin-bottom: 10px;
+}
+
+/* ======================================================== MAIN FILM ======================================================== */
+
+#filmMain {
+	padding: 40px 0px;
+}
+
+#filmMain hr {
+	margin: 20px 0px;
+}
+
+#nazad {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#nazad:hover {
+	color: #90b7f5;
+}
+
+#filmInfo {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+#filmInfo img {
+	width: 400px;
+	border: 2px solid #1f1f1f;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+#opisFilma h2, #opisFilma p {
+	margin-bottom: 10px;
+}
+
+/* ======================================================== FOOTER ======================================================== */
+
+footer {
+	background-color: #1f1f1f;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+footer i, footer h3, footer h4, footer p {
+	margin: 10px 0px;
+	color: #ededed;
+}
+
+footer h3, footer h4 {
+	font-size: 20px;
+}
+
+#footerSocial {
+	width: 35%;
+	margin: 0px auto;
+}
+
+#footerContact {
+	width: 700px;
+	margin: 10px auto 0px auto;
+}
+
+#footerSocial ul, #footerContact ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#footerSocial ul {
+	width: 100%;
+}
+
+#footerContact ul li i, #footerContact ul li p {
+	display: inline-block;
+}
+
+#copyright {
+	margin-top: 20px;
+	font-size: 13px;
+}
